@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Historia do Docker</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #0d1b2a;
+      color: #fff;
+      padding: 2rem;
+    }
+
+    header { text-align: center; margin-bottom: 3rem; }
+    header h1 { color: #00b4d8; font-size: 2.4rem; }
+    header p  { color: #adb5bd; margin-top: .5rem; font-size: 1.1rem; }
+
+    /* TIMELINE */
+    .timeline {
+      position: relative;
+      max-width: 700px;
+      margin: 0 auto 3rem;
+    }
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 28px;
+      top: 0; bottom: 0;
+      width: 3px;
+      background: #1b3a52;
+    }
+    .evento {
+      display: flex;
+      align-items: flex-start;
+      gap: 1.2rem;
+      margin-bottom: 2rem;
+      position: relative;
+    }
+    .bolinha {
+      min-width: 58px;
+      height: 58px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: .85rem;
+      z-index: 1;
+    }
+    .ano-2013 { background: #00b4d8; color: #0d1b2a; }
+    .ano-2014 { background: #48cae4; color: #0d1b2a; }
+    .ano-2015 { background: #52b788; color: #0d1b2a; }
+    .ano-2017 { background: #f4a261; color: #0d1b2a; }
+    .ano-2020 { background: #e76f51; color: #fff; }
+    .ano-2025 { background: #ef233c; color: #fff; }
+
+    .conteudo {
+      background: #1b2a3b;
+      border-radius: 10px;
+      padding: 1rem 1.2rem;
+      flex: 1;
+      border-left: 3px solid #00b4d8;
+    }
+    .conteudo h3 { color: #00b4d8; margin-bottom: .3rem; }
+    .conteudo p  { color: #adb5bd; font-size: .95rem; line-height: 1.5; }
+
+    /* EMPRESAS */
+    .empresas { max-width: 700px; margin: 0 auto 3rem; }
+    .empresas h2 { color: #00b4d8; text-align: center; margin-bottom: 1.2rem; font-size: 1.4rem; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: .8rem;
+    }
+    .empresa {
+      background: #1b2a3b;
+      border: 1px solid #1b3a52;
+      border-radius: 8px;
+      padding: .8rem;
+      text-align: center;
+      color: #00b4d8;
+      font-weight: bold;
+      font-size: .9rem;
+    }
+
+    footer {
+      text-align: center;
+      color: #4a6274;
+      font-size: .85rem;
+      margin-top: 2rem;
+    }
+    footer span { color: #00b4d8; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Historia do Docker</h1>
+    <p>De projeto interno a revolucao mundial em 10 anos</p>
+  </header>
+
+  <div class="timeline">
+
+    <div class="evento">
+      <div class="bolinha ano-2013">2013</div>
+      <div class="conteudo">
+        <h3>Nasce o Docker</h3>
+        <p>Solomon Hykes apresenta o Docker no PyCon, Santa Clara, em apenas 5 minutos. Era uma ferramenta interna da dotCloud — decidiram abrir o codigo.</p>
+      </div>
+    </div>
+
+    <div class="evento">
+      <div class="bolinha ano-2014">2014</div>
+      <div class="conteudo">
+        <h3>As gigantes adotam</h3>
+        <p>Google, Microsoft e IBM comecam a apoiar e integrar Docker em seus servicos de cloud.</p>
+      </div>
+    </div>
+
+    <div class="evento">
+      <div class="bolinha ano-2015">2015</div>
+      <div class="conteudo">
+        <h3>Kubernetes e Docker Compose</h3>
+        <p>Surgem ferramentas para orquestrar varios containers ao mesmo tempo. O ecossistema explode.</p>
+      </div>
+    </div>
+
+    <div class="evento">
+      <div class="bolinha ano-2017">2017</div>
+      <div class="conteudo">
+        <h3>Docker no Windows</h3>
+        <p>Docker chega nativamente ao Windows, expandindo seu alcance para alem do Linux.</p>
+      </div>
+    </div>
+
+    <div class="evento">
+      <div class="bolinha ano-2020">2020</div>
+      <div class="conteudo">
+        <h3>Pandemia acelera a cloud</h3>
+        <p>A migracao massiva para trabalho remoto e cloud consolida Docker como padrao da industria.</p>
+      </div>
+    </div>
+
+    <div class="evento">
+      <div class="bolinha ano-2025">2025+</div>
+      <div class="conteudo">
+        <h3>Impossivel ignorar</h3>
+        <p>E praticamente impossivel trabalhar com TI sem encostar em Docker. Virou habilidade essencial.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="empresas">
+    <h2>Quem usa Docker hoje?</h2>
+    <div class="grid">
+      <div class="empresa">Netflix</div>
+      <div class="empresa">Spotify</div>
+      <div class="empresa">PayPal</div>
+      <div class="empresa">Uber</div>
+      <div class="empresa">Airbnb</div>
+      <div class="empresa">ING Bank</div>
+      <div class="empresa">BBC</div>
+      <div class="empresa">eBay</div>
+      <div class="empresa">Yelp</div>
+      <div class="empresa">Adobe</div>
+      <div class="empresa">GitHub</div>
+      <div class="empresa">Stripe</div>
+    </div>
+  </div>
+
+  <footer>
+    Servido pelo <span>nginx</span> — baixado direto do <span>Docker Hub</span>
+  </footer>
+
+</body>
+</html>
