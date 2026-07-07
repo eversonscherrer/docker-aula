@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Livro de Visitas — Projeto Final Docker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>📖 Livro de Visitas</h1>
+    <p class="subtitulo">Projeto final — Docker + Docker Compose</p>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>Deixe sua mensagem</h2>
+      <form id="form-mensagem">
+        <input type="text" id="nome" placeholder="Seu nome" maxlength="80" required>
+        <textarea id="mensagem" placeholder="Sua mensagem" maxlength="280" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+      <p id="status"></p>
+    </section>
+
+    <section class="card">
+      <h2>Mensagens recebidas</h2>
+      <ul id="lista-mensagens"></ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>Frontend (nginx) → API (Flask) → Banco (PostgreSQL)</p>
+    <p>Tudo orquestrado com um unico <code>docker compose up</code></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

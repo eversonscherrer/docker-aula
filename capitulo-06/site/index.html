@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Ola, mundo! 👋</h1>
+    <p class="subtitulo">Sou <span id="nome">TROQUE PELO SEU NOME</span> e esse e o meu portfolio</p>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>Sobre mim</h2>
+      <p>TROQUE por uma frase curta sobre voce: o que estuda, o que gosta,
+         o que quer ser.</p>
+    </section>
+
+    <section class="card">
+      <h2>Rodando dentro de um container Docker</h2>
+      <p>Esse site esta sendo servido pelo <strong>Nginx</strong>, direto
+         de dentro de um container. A pasta <code>site/</code> do seu PC
+         esta conectada ao container por um <strong>volume</strong> — edite
+         este arquivo, salve, e atualize o navegador. Sem rebuild, sem
+         reiniciar nada.</p>
+    </section>
+
+    <section class="card">
+      <h2>Contador de cliques</h2>
+      <button id="botao">Clique aqui</button>
+      <p id="contador">0 cliques</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Docker na Pratica • Capitulo 6 • Servido pelo nginx num container</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
