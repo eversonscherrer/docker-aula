@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Docker vs Maquina Virtual</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #0d1b2a;
+      color: #fff;
+      padding: 2rem;
+    }
+
+    header { text-align: center; margin-bottom: 3rem; }
+    header h1 { color: #00b4d8; font-size: 2.4rem; }
+    header p  { color: #adb5bd; margin-top: .5rem; font-size: 1.1rem; }
+
+    .colunas {
+      max-width: 900px;
+      margin: 0 auto 3rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+    }
+    .card {
+      background: #1b2a3b;
+      border-radius: 10px;
+      padding: 1.4rem;
+      border-left: 3px solid #00b4d8;
+    }
+    .card h2 { color: #00b4d8; margin-bottom: .8rem; font-size: 1.2rem; }
+    .card ul { list-style: none; color: #adb5bd; font-size: .95rem; line-height: 1.9; }
+    .card ul li::before { content: "• "; color: #00b4d8; }
+
+    .tabela { max-width: 900px; margin: 0 auto 3rem; }
+    .tabela h2 { color: #00b4d8; text-align: center; margin-bottom: 1.2rem; font-size: 1.4rem; }
+    table { width: 100%; border-collapse: collapse; background: #1b2a3b; border-radius: 8px; overflow: hidden; }
+    th, td { padding: .8rem 1rem; text-align: center; font-size: .9rem; }
+    th { background: #00b4d8; color: #0d1b2a; }
+    td { border-top: 1px solid #1b3a52; color: #adb5bd; }
+    td.destaque { color: #52b788; font-weight: bold; }
+
+    footer {
+      text-align: center;
+      color: #4a6274;
+      font-size: .85rem;
+      margin-top: 2rem;
+    }
+    footer span { color: #00b4d8; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Docker vs Maquina Virtual</h1>
+    <p>Apartamento ou casa? Qual a melhor para cada situacao</p>
+  </header>
+
+  <div class="colunas">
+    <div class="card">
+      <h2>🏠 VM = A casa</h2>
+      <ul>
+        <li>SO proprio (kernel completo)</li>
+        <li>Drivers, libs, bibliotecas</li>
+        <li>Tudo isolado do host</li>
+        <li>Gasta GB de RAM e disco</li>
+        <li>Demora minutos pra ligar</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h2>📦 Container = O apartamento</h2>
+      <ul>
+        <li>Compartilha o kernel do host</li>
+        <li>So leva libs proprias do app</li>
+        <li>Isolado, mas leve</li>
+        <li>Gasta MB de RAM, nao GB</li>
+        <li>Liga em segundos</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="tabela">
+    <h2>Comparacao direta</h2>
+    <table>
+      <tr><th>Criterio</th><th>Maquina Virtual</th><th>Container Docker</th></tr>
+      <tr><td>Tamanho</td><td>Gigabytes (GB)</td><td class="destaque">Megabytes (MB)</td></tr>
+      <tr><td>Tempo para iniciar</td><td>Minutos</td><td class="destaque">Segundos</td></tr>
+      <tr><td>Consumo de RAM</td><td>Alto</td><td class="destaque">Baixo</td></tr>
+      <tr><td>Sistema Operacional</td><td>Tem o seu proprio</td><td>Compartilha do host</td></tr>
+      <tr><td>Isolamento</td><td class="destaque">Total</td><td>Parcial (mas seguro)</td></tr>
+      <tr><td>Portabilidade</td><td>Media</td><td class="destaque">Excelente</td></tr>
+    </table>
+  </div>
+
+  <footer>
+    Servido pelo <span>nginx</span> — o mesmo container que voce acabou de comparar com uma VM
+  </footer>
+
+</body>
+</html>

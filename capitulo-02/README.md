@@ -2,6 +2,10 @@
 
 > Pratica baseada na aula **"Historia do Docker"**
 
+## Slides da aula
+
+📄 [`02-historia-do-docker.pdf`](./02-historia-do-docker.pdf)
+
 ## O que vai acontecer aqui?
 
 Diferente do capitulo 1 (onde criamos nosso proprio servidor em Python),

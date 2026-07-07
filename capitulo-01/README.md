@@ -2,6 +2,10 @@
 
 > Pratica baseada na aula **"O que e Docker?"**
 
+## Slides da aula
+
+📄 [`01-o-que-e-docker.pdf`](./01-o-que-e-docker.pdf)
+
 ## O que tem aqui?
 
 | Arquivo | O que e |

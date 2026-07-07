@@ -1,0 +1,6 @@
+# VERSAO LEVE — "apartamento": so o essencial pra rodar o app
+FROM nginx:alpine
+
+COPY index.html /usr/share/nginx/html/index.html
+
+EXPOSE 80
